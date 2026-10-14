@@ -1,0 +1,217 @@
+{
+  "scope": "Mathematical, temporal, data, and execution integrity",
+  "public_dataset_training": false,
+  "python": "3.12.6",
+  "torch": "2.7.1+cpu",
+  "device": "cpu",
+  "tests": 51,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "checks": [
+    {
+      "test": "__main__.DataChecks.test_complete_response_merge_preserves_repetition",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_configuration_roundtrip",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_conflicting_event_metadata_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_csv_and_split_roundtrip",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_direct_sequence_rejects_original_row_inversion_at_equal_position",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_invalid_configuration",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_native_assist_merges_concepts_without_merging_repeated_responses",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_native_ednet_preserves_bundle_order_and_predictions",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_original_row_survives_csv_roundtrip",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_relations_use_only_supplied_training_items",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_sampling_matches_independent_hash_order",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_single_concept_distinguishability",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_skewed_ratios_keep_nonempty_partitions",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_split_is_disjoint_and_order_invariant",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_split_students_require_explicit_lists",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_unique_item_jaccard_ignores_response_frequency",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.DataChecks.test_unknown_configuration_field",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ExperimentChecks.test_bfloat16_checkpoint_preserves_assessment_precision",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ExperimentChecks.test_training_checkpoint_and_held_out_reload",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.MetricChecks.test_atomic_groups_and_no_duplicate_windows",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.MetricChecks.test_auc_matches_independent_pairwise_comparisons",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.MetricChecks.test_auc_ties_and_single_class",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.MetricChecks.test_online_event_count",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.MetricChecks.test_seed_summary_uses_sample_standard_deviation",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_attention_statistics_remain_float32_under_autocast",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_attenuation_is_symmetric_and_monotone",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_branch_endpoints_and_strict_threshold",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_bundle_predictions_are_frozen_before_feedback",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_bundle_updates_follow_item_and_original_row",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_counterfactual_resets_are_independent",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_cpu_bfloat16_forward_and_backward",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_current_and_future_labels_do_not_change_saved_prediction",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_empty_sequence_and_no_grad_evaluation",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_feedback_uses_saved_logits_with_dropout",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_first_event_mask_and_window_continuity",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_fractional_entropy_exponents_have_finite_boundary_gradients",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_invalid_sequence_does_not_mutate_runtime_state",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_noncontiguous_group_is_rejected_before_any_state_update",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_prediction_is_logit_sum",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_recurrent_gradients_stop_only_at_segment_boundary",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_response_replay_and_backward_time_are_rejected_across_calls",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_sensitivity_matches_finite_difference",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_split_bundle_is_rejected_even_after_history_is_cleared",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_student_state_isolation",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_training_gradients_are_finite_and_reach_refinement",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ModelChecks.test_unrelated_concept_states_are_unchanged",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ObjectiveChecks.test_effective_batch_centering_is_event_weighted",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ObjectiveChecks.test_losses_match_independent_numpy_calculation",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ObjectiveChecks.test_masked_first_event_is_excluded_from_all_statistics",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ObjectiveChecks.test_no_refinement_has_zero_consistency",
+      "status": "passed"
+    },
+    {
+      "test": "__main__.ObjectiveChecks.test_refined_consistency_target_has_no_gradient",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "release": "1.0.0",
+  "validation_scope": "Independent code and equation review followed by executable integrity checks",
+  "public_dataset_training": false,
+  "cuda_execution": false,
+  "cycles": [
+    {
+      "cycle": 1,
+      "checks": 36,
+      "status": "passed",
+      "findings_and_repairs": [
+        "Ordinary feedback calculations now reuse saved prediction tensors instead of resampling encoder dropout.",
+        "Original source-row indices persist through event ingestion, canonical serialization, and bundle update sorting.",
+        "Effective-batch objectives are centered and normalized over the complete valid-event set."
+      ]
+    },
+    {
+      "cycle": 2,
+      "checks": 43,
+      "status": "passed",
+      "findings_and_repairs": [
+        "Fractional entropy exponents use a finite derivative at the zero suppression-factor boundary.",
+        "Attention matrix operations run in an explicit FP32 autocast-disabled region.",
+        "Sequence input validation precedes runtime-state mutation.",
+        "Initialization-only segments do not occupy optimizer batches or warm-up step counts.",
+        "Partition metadata requires explicit lists; chronology and raw-row tie ordering are validated."
+      ]
+    },
+    {
+      "cycle": 3,
+      "checks": 51,
+      "status": "passed",
+      "findings_and_repairs": [
+        "Validation and independent checkpoint assessment inherit the stored backbone precision.",
+        "Runtime protocol metadata prevents reopening solving groups, response replay, and backward chronology across calls.",
+        "Native EdNet and ASSIST event-integrity checks are included in the distributable test suite.",
+        "The CUDA wheel switch specifies its build explicitly; supported Python versions and actual execution scope are stated.",
+        "Source wording and the complete README command inventory were audited."
+      ]
+    }
+  ],
+  "benchmark_status": "Full public-dataset AUC and GPU cost measurements are not included in the software checks.",
+  "input_constraint": "Complete XES3G5M event exports require unique event IDs; public sequence fragments do not reliably retain them."
+}

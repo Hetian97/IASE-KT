@@ -1,0 +1,20 @@
+{
+  "release": "1.0.0",
+  "python_files": 7,
+  "files": {
+    "config.py": "6caa4046c9b976107f3e741191fecdb3fbffed8c33336c993c296cfbd060a8bc",
+    "data.py": "e64f751c7c3c7bdc7e42b62b27c90bbf4e5fb0b8c2372b7a6a054d1e3509c026",
+    "evaluate.py": "ea85dbaa0e4f5036d5a58fb13e58b436d5cf081b5d10edbd71c6289eec7702aa",
+    "losses.py": "29e14dcfa9a4453ccaa44156cc388bd333fd0f6112a875a6f324491d09ca8de4",
+    "model.py": "ade9f699d1f34ca6903958511ae1e9b5f643803d801aeb75116ca0e457902826",
+    "README.md": "859f4f5c3916d0e6295e93d1ad43875e0f0fec8ea3dadf21baf8c33a449067e5",
+    "requirements.txt": "b03c8ed0775cc2d63ddc3c1f248219dac7f33f0abcc97b16d3d5b25caca14147",
+    "train.py": "827e4c7f096c99988475f044733ce0af64454014c92be2fde0a3e0e4d114ff5d",
+    "validate.py": "37bd113d4db6ec690a41853d913a4408fa7ba2a065d22d7878e02cb71205462c",
+    "validation/final_checks.json": "793f8ecf1508eacc471458e6b0c7216300193fce937ccd5fb50344f14702d16d",
+    "validation/review.json": "6bcb3aeaa82e9dc9a92f0b725afaa4ced153788a778b0a5757f9c675a9a83fde",
+    "validation/round_1_checks.json": "58d67061d434cd1df4b6ef80120e0adc7b8c262721b2388dd6cc6abcac802500",
+    "validation/round_2_checks.json": "6e108a405da93c69b3baa5d8938e52aed1c9c2e1bd7959632b1578cf04a84ce1",
+    "validation/round_3_checks.json": "793f8ecf1508eacc471458e6b0c7216300193fce937ccd5fb50344f14702d16d"
+  }
+}
